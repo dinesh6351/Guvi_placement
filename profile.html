@@ -1,0 +1,62 @@
+<?php
+include('./php/profile.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+        <!-- bootstrap css link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">   
+        <!-- font style -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+       
+    <div class="container">
+    <div class="col-md-8 mt-1 text-center">
+    <h1 class="">Profile Details</h1>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-3 text-start"><h5>Full Name</h5></div>
+    </div>
+    <div id="user_nam"class="col-md-9 text-secondary user_names">
+        <?php user_function(); ?>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-3 text-start"><h5>Email</h5></div>
+    </div>
+    <div class="col-md-9 text-secondary">
+        <?php user_email_function(); ?>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-3 text-start"><h5>Date of Birth</h5></div>
+    </div>
+    <div class="col-md-9 text-secondary">
+        <?php user_date_function(); ?>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-3 text-start"><h5>Address</h5></div>
+    </div>
+    <div class="col-md-9 text-secondary">
+        <?php user_adress_function(); ?>    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-3 text-start"><h5>Phone No</h5></div>
+    </div>
+    <div class="col-md-9 text-secondary">
+        <?php user_phone_function(); ?>
+    </div>
+    </div>
+</div>
+<!-- <?php include './php/profile.php';?> -->
+</body>
+</html>
